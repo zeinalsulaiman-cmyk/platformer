@@ -1,14 +1,16 @@
-class Player:
-    pass
+import pygame
+import settings
 
-import player
-from player import player
+class Player:
+    def __int__(self, x, y):
+        self.x = x
+        self.y = y
+
 
 
 #main function
 
-def move_player(speed, direction, velocity, jump):
-    move_player.__init__()
+def move_player__init__():
 
 
 
