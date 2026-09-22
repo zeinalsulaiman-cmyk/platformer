@@ -18,7 +18,7 @@ clock = pygame.time.Clock()
 
 #player und enemy erstellen
 player = Player()
-enemy = Enemy()
+enemy = Enemy(300, 200)
 
 #Spiel Schleife
 
@@ -31,12 +31,12 @@ while running:
 
 #Hintergrund grau
     screen.fill((settings.COLORS["sky"]))
+    enemy.update()
+    enemy.draw(screen)
     pygame.display.flip()
 
 #FPS
     clock.tick(settings.FPS)
-
-##
 
 
 
